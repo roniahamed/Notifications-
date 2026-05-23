@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+/media
+/static
+/staticfiles
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+htmlcov/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Project specific
+*.bak
+*.tmp
+celerybeat-schedule
+
+
+firebase-credentials.json
+
+./tests/
+
+test/
+./test 
+/test
+
+
+Friend request ui by figma
+./Friend request ui by figma
+
+# TLS certificates (Let's Encrypt)
+certbot/conf/
+SKILLS
+
+
+.github
+
+.codex
+
+todo.txt
+
+all_users.csv
+
+
+firebase-credentials.json
+invoice ui
+data.txt
+summery ui
+
+serviceAccountKey.json
+
+task.me
+file_structure.md
