@@ -13,8 +13,6 @@ from api.notifications.middleware import JWTAuthMiddleware
 application = ProtocolTypeRouter(
     {
         "http": get_asgi_application(),
-        "websocket": AllowedHostsOriginValidator(
-            JWTAuthMiddleware(URLRouter(websocket_urlpatterns))
-        ),
+        "websocket": JWTAuthMiddleware(URLRouter(websocket_urlpatterns)),
     }
 )
