@@ -157,7 +157,7 @@ class ForgotPasswordView(GenericAPIView):
             User.objects.get(email=email)
         except User.DoesNotExist:
             return Response(
-                {"detail": "If that email exists, a reset link has been sent."},
+                {"detail": "If that email exists, a reset token has been sent."},
                 status=status.HTTP_200_OK,
             )
 
@@ -165,7 +165,7 @@ class ForgotPasswordView(GenericAPIView):
         store_reset_token(email, token)
         send_password_reset_email(email, token)
         return Response(
-            {"detail": "If that email exists, a reset link has been sent."},
+            {"detail": "If that email exists, a reset Token has been sent."},
             status=status.HTTP_200_OK,
         )
 
